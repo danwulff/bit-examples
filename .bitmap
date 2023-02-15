@@ -17,15 +17,9 @@
     },
     "lit-card": {
         "scope": "",
-        "version": "",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "bit-examples/lit-card",
-        "config": {
-            "teambit.web-components/lit@0.0.25": {},
-            "teambit.envs/envs": {
-                "env": "teambit.web-components/lit"
-            }
-        }
+        "rootDir": "bit-examples/lit-card"
     },
     "$schema-version": "15.0.0"
 }

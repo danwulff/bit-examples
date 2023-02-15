@@ -15,5 +15,11 @@
         "mainFile": "index.ts",
         "rootDir": "bit-examples/lit-button"
     },
+    "lit-card": {
+        "scope": "danwulff.bit-examples",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "bit-examples/lit-card"
+    },
     "$schema-version": "15.0.0"
 }

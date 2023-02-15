@@ -27,7 +27,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "company.scope"
+    "defaultScope": "danwulff.bit-examples"
   },
   /**
    * main configuration for component dependency resolution.

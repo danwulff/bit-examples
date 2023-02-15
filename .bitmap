@@ -10,7 +10,7 @@
 
 {
     "lit-button": {
-        "scope": "",
+        "scope": "danwulff.bit-examples",
         "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "bit-examples/lit-button"

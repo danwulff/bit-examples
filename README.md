@@ -2,7 +2,7 @@
 
 Two components are created in parallel by two different devs. A "lit-card" and a "lit-checkbox".
 
-The "lit-card" is merged in first: []()
+The "lit-card" is merged in first: https://github.com/danwulff/bit-examples/pull/1
 
 Even though the "lit-checkbox" is completely independent we see that a code conflict occurs in the .bitmap: []()
 

@@ -16,7 +16,7 @@
         "rootDir": "bit-examples/lit-button"
     },
     "lit-card": {
-        "scope": "",
+        "scope": "danwulff.bit-examples",
         "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "bit-examples/lit-card"

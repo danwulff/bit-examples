@@ -15,5 +15,17 @@
         "mainFile": "index.ts",
         "rootDir": "bit-examples/lit-button"
     },
+    "lit-card": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "bit-examples/lit-card",
+        "config": {
+            "teambit.web-components/lit@0.0.25": {},
+            "teambit.envs/envs": {
+                "env": "teambit.web-components/lit"
+            }
+        }
+    },
     "$schema-version": "15.0.0"
 }

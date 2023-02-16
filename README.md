@@ -1,11 +1,26 @@
-# example 1
+# example 2
 
-Two components are created in parallel by two different devs. A "lit-card" and a "lit-checkbox".
+One component exists in the workspace "lit-button". Another component is created via `bit create lit lit-card` and merged in.
 
-The "lit-card" is merged in first: https://github.com/danwulff/bit-examples/pull/1
+Even though the "lit-card" was created via the bit command line it does not appear in the pnpm-lock.yaml file.
 
-Even though the "lit-checkbox" is completely independent we see that a code conflict occurs in the .bitmap: https://github.com/danwulff/bit-examples/pull/2
+**Expectation:** "bit create lit {}" should also update the pnpm-lock.yaml
 
-This looks to be due to the fact that the .bitmap JSON places the components near each other. In other words if "lit-checkbox" was named "lit-apollo" instead this wouldn't occur because the pre-existing component "lit-button" would be between "lit-apollo" and "lit-card" within the .bitmap json.
+The following commands all **don't** update the pnpm-lock.yaml:
 
-Anyhow, all that to say. This kind of conflict happens often as we currently don't have an extensive list of components yet.
+* `bit install`
+* `bit update`
+
+However if I update a dependency of a different component and install, I'll get a pnpm-lock-yaml change:
+* `bit deps set lit-button @popperjs/core --peer`
+* `bit install`
+
+Which will include:
+```
+  bit-examples/lit-card:
+  specifiers: {}
+```
+
+See: https://github.com/danwulff/bit-examples/pull/3
+
+**Problem:** These seemingly random specifier additions seem to cause a decent amount of git conflicts. If `bit create` updated the pnpm-lock.yaml when the component was initially created, things would be smoothed out for sure.

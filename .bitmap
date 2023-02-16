@@ -13,7 +13,16 @@
         "scope": "danwulff.bit-examples",
         "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "bit-examples/lit-button"
+        "rootDir": "bit-examples/lit-button",
+        "config": {
+            "teambit.dependencies/dependency-resolver": {
+                "policy": {
+                    "peerDependencies": {
+                        "@popperjs/core": "2.11.6"
+                    }
+                }
+            }
+        }
     },
     "lit-card": {
         "scope": "danwulff.bit-examples",

@@ -8,11 +8,13 @@ importers:
     specifiers:
       '@babel/runtime': 7.12.18
       '@open-wc/testing-helpers': 1.8.12
+      '@popperjs/core': 2.11.6
       '@teambit/web-components.lit': 0.0.25
       '@types/jest': 26.0.20
       '@types/node': 12.20.4
       lit: ^2.0.0-rc.2
     dependencies:
+      '@popperjs/core': registry.npmjs.org/@popperjs/core/2.11.6
       lit: registry.npmjs.org/lit/2.0.0-rc.2
     devDependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
@@ -22,6 +24,9 @@ importers:
       '@types/node': registry.npmjs.org/@types/node/12.20.4
 
   bit-examples/lit-button:
+    specifiers: {}
+
+  bit-examples/lit-card:
     specifiers: {}
 
 packages:
@@ -196,6 +201,12 @@ packages:
       lit-element: registry.npmjs.org/lit-element/2.5.1
       lit-html: registry.npmjs.org/lit-html/1.4.1
     dev: true
+
+  registry.npmjs.org/@popperjs/core/2.11.6:
+    resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/@popperjs/core/-/core-2.11.6.tgz}
+    name: '@popperjs/core'
+    version: 2.11.6
+    dev: false
 
   registry.npmjs.org/@teambit/dependencies.modules.packages-excluder/0.0.53:
     resolution: {integrity: sha512-0LjQ9IJhp4vQvpaVs4ZL0yXBPoVJFGZreM4V4ZiUeFWfCEnDkUm6iPE1smGAYPIQb1p8KPGkIphu1ua2KCHdPA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@teambit/dependencies.modules.packages-excluder/-/dependencies.modules.packages-excluder-0.0.53.tgz}
@@ -1645,7 +1656,7 @@ packages:
     dev: true
 
   registry.npmjs.org/encoding/0.1.13:
-    resolution: {integrity: sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/encoding/-/encoding-0.1.13.tgz}
+    resolution: {integrity: sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/encoding/-/encoding-0.1.13.tgz}
     name: encoding
     version: 0.1.13
     requiresBuild: true
